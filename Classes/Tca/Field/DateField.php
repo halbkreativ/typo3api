@@ -76,7 +76,7 @@ class DateField extends AbstractField
     {
         $config = [
             'type' => 'datetime',
-            'format' => 'date',
+            'format' => $this->getOption('type'),
             'dbType' => $this->getOption('exposedDbType'),
             'range' => [],
         ];
